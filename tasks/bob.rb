@@ -21,7 +21,22 @@ class Bob < StairSweeper
     put_beeper()
     move()
     put_beeper()
-    move()
   end
+
+def turne1
+  turn_left()
+  turn_left()
+  turn_left
+  move
+  turn_left
+  turn_left
+  turn_left
+end
+
+def turne2
+  turn_left
+  move
+  turn_left
+end
 
 end
