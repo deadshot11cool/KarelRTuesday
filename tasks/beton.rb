@@ -8,22 +8,43 @@ require_relative "stair_sweeper"
 require_relative "../karel/robota"
 require_relative "../mixins/triangle"
 
-class Beton < UrRobot     
-    def bouge_7
-        move
-        put_beeper
-        move
-        put_beeper
-        move
-        put_beeper
-        move
-        put_beeper
-        move
-        put_beeper
-        move
-        put_beeper
-        move
-        put_beeper
-    end
+module Bc
+    class Beton < UrRobot     
+        def bouge_7
+            move
+            put_beeper
+            move
+            put_beeper
+            move
+            put_beeper
+            move
+            put_beeper
+            move
+            put_beeper
+            move
+            put_beeper
+            move
+            put_beeper
+        end
 
+        def clock_task
+            turn_left
+            turn_left
+            turn_left
+            move
+            turn_left
+            move
+            put_beeper
+        end
+
+        def clock_task2
+            move
+            turn_left
+            move
+            put_beeper
+            turn_left
+            turn_left
+            turn_left
+        end
+    end
 end

@@ -7,7 +7,7 @@ $graphical = true
 require_relative "beton"
 require_relative "../karel/robota"
 
-# a task for a stair sweeper
+include Bc
 def task()
   world = Robota::World
   world.read_world("../worlds/beton.txt")
