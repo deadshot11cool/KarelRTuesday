@@ -9,24 +9,6 @@ require_relative "../karel/robota"
 require_relative "../mixins/triangle"
 
 class Grinch2 < UrRobot   
-    def go
-        put_beeper
-        move
-        put_beeper
-        move
-        put_beeper
-        move
-        put_beeper
-        move
-        put_beeper
-        move
-        put_beeper
-    end
-
-    def go2
-        put_beeper
-        move
-    end
 
     def turn_right
         turn_left
@@ -40,26 +22,78 @@ class Grinch2 < UrRobot
         move
     end
 
-    def beeperplace
-        put_beeper
+    def grab2
+        pick_beeper
+        pick_beeper
+    end
+
+    def beepergrab
+        turn_left
         move
-        put_beeper
+        move
+        turn_right
+        move
+        turn_left
         move
         move
-        put_beeper
+        grab2
+        turn_right
         move
-        put_beeper
+        grab2
+        turn_right
+        turn_right
+        move
+        turn_left
+        move 
+        move
+        turn_right
+        move
+        turn_left
+        move
+        move
+        turn_left
+    end
+
+    def beepergrabrow
+        beepergrab
+        bouge3
+        beepergrab
+        bouge3
+        beepergrab
+        go_back
+    end
+
+    def go_back
+        turn_left
+        turn_left
+        bouge3
+        bouge3
+        bouge3
     end
 
     def go3
+        turn_left
+        bouge3
+        bouge3
+        turn_left
+        bouge3
+        beepergrabrow
+    end
+
+    def put_beeper2
         put_beeper
-        move
-        put_beeper
-        move
-        put_beeper
-        move
         put_beeper
     end
+
+    def put_beeper3
+        put_beeper2
+        put_beeper2
+        put_beeper2
+        put_beeper2
+        put_beeper2
+        put_beeper2
+    end
+
 end
 
 

@@ -19,9 +19,28 @@ def task()
   karel.bouge3
   karel.turn_left
   karel.move
-  karel.
+  karel.beepergrabrow
+  karel.go3
+  karel.turn_right
+  karel.bouge3
+  karel.bouge3
+  karel.move
+  karel.move
+  karel.turn_right
+  karel.move
+  karel.move
+  karel.turn_left
+  karel.move
+  karel.turn_left
+  karel.move
+  karel.turn_right
+  karel.move
+  karel.move
+  karel.put_beeper3
+  karel.turn_left
+  karel.turn_left
+  karel.move
 end
-
 
 if __FILE__ == $0
   if $graphical
